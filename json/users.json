@@ -1,0 +1,16 @@
+[
+    {
+        "nombre": "Jose",
+        "apellido": "Villlarreal",
+        "correo": "jevillarreal@itsa.edu.co",
+        "contraseña": "admin",
+        "tipo": "Administrador"
+    },
+    {
+        "nombre": "Gricel",
+        "apellido": "Barrera",
+        "correo": "gcbarrera@itsa.edu.co",
+        "contraseña": "user",
+        "tipo": "Usuario"
+    }
+]

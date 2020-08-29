@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="icon" type="image/PNG" href="../img/ico.PNG">
+</head>
+
+<body style="background: rgb(250, 182, 56)">
+
+    <div class="d-none d-sm-none d-md-block"><img src="../img/enc.jpg" alt="MercaPlus" width="100%" height="100%"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-justified">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-warning" href="inicio.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="premios.html">Premios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="catalogo.html">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="factura.html">Factura</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="chat.html">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="contactenos.html">Contactenos</a>
+                </li>
+            </ul>
+        </div>
+        <div id="accion"></div>
+    </nav>
+
+    <h1 class="display-4 mt-4 text-center">Contactenos</h1>
+
+    <div class="container">
+
+        <div class="row no-gutters mt-5 bg-light rounded">
+            <div class="col-lg-7 col-xl-7 d-none d-sm-none d-md-none d-lg-block p-5 bg-light rounded">
+                <img class="rounded mt-5 pt-5 container-fluid" src="../img/co.jpg" alt="Contactenos">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 bg-light jumbotron rounded">
+                <form class="form-signin m-4 " id="form">
+
+                    <input class="form-control text-center" type="text" placeholder="Nombre" id="nombre1">
+                    <br>
+                    <input class="form-control text-center" type="text" placeholder="Apellido" id="apellido1">
+
+                    <br>
+                    <label class="text-monospace mr-5"> Fecha Nacimiento</label>
+                    <div class="form-inline">
+
+                        <input class="float-leftt form-control mr-2" type="date" id="fechanac">
+                    </div>
+                    <br>
+                    <label class="text-monospace mr-5"> Género</label>
+
+                    <div class="form-inline">
+                        <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                            <label class="btn btn-warning active"><input type="radio" name="Genero"
+                                    id="genero">Hombre</label>
+                            <label class="btn btn-warning active"><input type="radio" name="Genero"
+                                    id="genero">Mujer</label>
+                            <label class="btn btn-warning active"><input type="radio" name="Genero"
+                                    id="genero">Otro</label>
+                        </div>
+                    </div>
+                    <br>
+
+                    <label class="text-monospace">Tipo de documento</label>
+                    <br>
+                    <div class="btn-group btn-group-toggle">
+                        <label class="btn btn-warning active"><input type="radio" name="documento">Cédula de
+                            Ciudadanía</label>
+                        
+                    </div>
+                 
+                  <br><br>
+                    <div class="btn-group btn-group-toggle">
+                        <label class="btn btn-warning active"><input type="radio" name="documento">Cédula de
+                            Extranjería </label>
+                        
+                    </div>
+                    <br><br>
+
+
+                    <input class="form-control text-center" type="number" placeholder="Numero de documento" id="nodoc">
+
+                    <br>
+
+                    <div class="form-inline">
+                        <label class="text-monospace">Ciudad</label>
+                        <select class="custom-select">
+                            <option value="">Barranquilla</option>
+                            <option value="">Bogota</option>
+                            <option value="">Cali</option>
+                            <option value="">Cartagena</option>
+                            <option value="">Medellin</option>
+                            <option value="">Santa Marta</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <input class="form-control" type="text" placeholder="Direccion particular" id="direccion">
+
+                    <br>
+
+                    <input class="form-control" type="tel" placeholder="Telefono" id="telefono">
+
+                    <br>
+
+                    <label class="text-monospace">Direccion de correo electronico</label><br>
+
+                    <input class="form-control" type="email" placeholder="someone@example.com" id="email">
+
+                    <br>
+                    <div class="d-flex justify-content-around">
+                        <input class="btn btn-warning btn-sm" type="submit" value="enviar">
+
+
+                    </div>
+                </form>
+                <div id="show">
+                    <table class="table table-sm" id="mostrar">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>No. doc</th>
+                                <th>Direccion</th>
+                                <th>Telefono</th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="blockquote-footer bg-light text-center mt-4">© MercaPlus 2020 <br>
+        Todos los derechos reservados</footer>
+
+    <script src="../js/all.js"></script>
+    <script src="../js/contactenos.js"></script>
+    <script src="../js/jquery.1.11.1.js"></script>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

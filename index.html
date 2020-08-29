@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/signin.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Inicio</title>
+</head>
+
+<body>
+
+  <div class="m-auto text-center jumbotron rounded">
+    
+      <form class="form-signin" id="form">
+        <img src="img/undraw_avatar.svg" alt=""
+          width="45%" height="45%">
+        <h1 class="m-3 h2 mb-3 font-weight-normal">Inicia sesión</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="user" class="form-control" placeholder="Usuario" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Contraseña" required>
+        
+        <button class="btn btn-lg btn-warning btn-block" type="submit">Acceder</button>
+        <button class="btn btn-lg btn-warning btn-block" onclick="invitado()">Modo invitado</button>
+        <p class="mt-2 text-muted">&copy; 2020</p>
+      </form>
+
+  </div>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

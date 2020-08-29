@@ -1,0 +1,50 @@
+[
+    {
+        "nombre":"Camiseta Polo Blanca Nike",
+        "precio":122900
+    },
+    {
+        "nombre":"Camiseta Rosado-Rojo",
+        "precio":89900
+    },
+    {
+        "nombre":"Camiseta Esqueleto Negro-Beige",
+        "precio":99900
+    },
+    {
+        "nombre":"Camiseta Blanco Nike Sleeve Running",
+        "precio":85000
+    },
+    {
+        "nombre":"Leche Deslactosada",
+        "precio":17990
+    },
+    {
+        "nombre":"Harina PAN",
+        "precio":3490
+    },
+    {
+        "nombre":"Zanahoria x500gr",
+        "precio":2024
+    },
+    {
+        "nombre":"Chorizo Antioqueño",
+        "precio":16784
+    },
+    {
+        "nombre":"Tablet Lenovo",
+        "precio":1079900
+    },
+    {
+        "nombre":"Portátil Lenovo",
+        "precio":3429900
+    },
+    {
+        "nombre":"Cámara Canon",
+        "precio":999900
+    },
+    {
+        "nombre":"iPhone 11 128gb",
+        "precio":3599999
+    }
+]

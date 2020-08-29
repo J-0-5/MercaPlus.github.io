@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factura</title>
+  <link rel="icon" type="image/PNG" href="../img/ico.PNG">
+</head>
+
+<body style="background: gainsboro">
+  <div class="container"></div>
+
+  <div class="d-none d-sm-none d-md-block"><img src="../img/enc.jpg" alt="MercaPlus" width="100%" height="100%"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning nav-justified">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mt-2 mt-md-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="inicio.html">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="premios.html">Premios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sucursales.html">Sucursales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Catalogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="factura.html">Factura</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chat.html">Chat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactenos.html">Contactenos</a>
+        </li>
+      </ul>
+    </div>
+    <div id="accion"></div>
+  </nav>
+
+  <h1 class="text-warning text-center">F A C T U R A</h1>
+  <hr>
+
+  <div class="row d-flex justify-content-center text-center">
+    <form class="col-6" id="form">
+
+      <div class="form-group-row">
+        <select id="producto" class="form-control" class="col-lg-">
+
+        </select>
+      </div>
+      <hr>
+      <div class="form-group-row">
+        <input id="unidades" type="number" placeholder="Cantidad" class="form-control">
+      </div>
+      <hr>
+
+      <div class="form-group-row">
+        <label class="col">Identificacion</label>
+        <select id="id" class="form-control">
+          <option value="Cedula de ciudadania">CC</option>
+          <option value="Cedula extranjera">CE</option>
+        </select>
+        <input id="documento" type="number" placeholder="Numero de documento" class="form-control">
+
+      </div>
+      <hr>
+      <div class="form-group-row">
+        <label class="col">Metodo de pago</label>
+        <select id="modo" class="form-control">
+          <option value="Tarjeta credito">Tarjeta credito</option>
+          <option value="Tarjeta debito">Tarjeta debito</option>
+        </select>
+
+      </div>
+      <div class="form-group-row">
+        <label for="" class="col">Numero de cuenta</label>
+        <input id="num" type="text" placeholder="XXXX XXXX XXXX" class="form-control">
+      </div>
+      <hr>
+      <div class="form-group-row ">
+        <label class="btn btn-warning active">
+          <input type="checkbox" id="myCheck" onclick="myFunction()"> Servicio Domicilio
+        </label>
+      </div>
+      <hr>
+      <div class="form-group-row">
+        <button type="submit" id="btnenviar" class="btn btn-warning">Añadir</button>
+        <button type="button" id="btneditar" class="btn btn-warning" onclick="actualizarfila()">Editar</button>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-warning" onclick="Mostrar()">Mostrar</button>
+    </form>
+    <div class="form-group-row d-flex justify-content-center text-center">
+      <div id="show">
+        <table id="mostrar" class="table table-bordered">
+          <thead>
+            <th># Identificacion</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Pago</th>
+            <th># Cuenta</th>
+            <th>Precio total</th>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  
+
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenteredLabel">Factura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="modal">
+          
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OKAY</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <footer class="blockquote-footer text-light bg-warning text-center mt-2">© MercaPlus 2020 <br>
+    Todos los derechos reservados</footer>
+
+  <script src="../js/factura.js"></script>
+  <script src="../js/all.js"></script>
+  <script src="../js/jquery.1.11.1.js"></script>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
